@@ -4,7 +4,7 @@ import sqlite3
 def get_all():
     conn = sqlite3.connect('db.db')
     c = conn.cursor()
-    c.execute('SELEcT * FROM users')
+    c.execute('SELECT * FROM users')
     users = c.fetchall()
     conn.close()
     for i in range(len(users)):
@@ -37,11 +37,14 @@ def get_single_by_username(username):
         return {'id': -1, 'username': '', 'email': '', 'password': ''}
 
 
-def create(user_str):
+def create(user_str, id='-1'):
     user = user_str.split('|')
     conn = sqlite3.connect('db.db')
     c = conn.cursor()
-    params = (len(get_all()) + 1, user[0], user[1], user[2])
+    if id == '-1':
+        params = (len(get_all()) + 1, user[0], user[1], user[2])
+    else:
+        params = (int(id), user[0], user[1], user[2])
     c.execute('INSERT INTO users VALUES(?, ?, ?, ?)', params)
     conn.commit()
     conn.close()
