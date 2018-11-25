@@ -48,3 +48,19 @@ def create(user_str, id='-1'):
     c.execute('INSERT INTO users VALUES(?, ?, ?, ?)', params)
     conn.commit()
     conn.close()
+
+
+def delete(id):
+    conn = sqlite3.connect('db.db')
+    c = conn.cursor()
+    params = (int(id), )
+    c.execute('DELETE FROM users WHERE id=?', params)
+    conn.commit()
+    conn.close()
+
+
+def edit(user_str):
+    user = user_str.split('|')
+    user_str = user[1] + '|' + user[2] + '|' + user[3]
+    delete(user[0])
+    create(user_str, user[0])
