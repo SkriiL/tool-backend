@@ -55,7 +55,6 @@ async def create_user(sid, user):
 
 @sio.on('editUser')
 async def edit_user(sid, user):
-    print(user)
     users.edit(user)
 
 
