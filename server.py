@@ -2,6 +2,7 @@ from aiohttp import web
 import socketio
 import users
 import books
+import messages
 
 sio = socketio.AsyncServer()
 app = web.Application()
@@ -25,16 +26,21 @@ def connect(sid, environ):
 @sio.on('getUserById')
 async def get_user_by_id(sid, id_str):
     user = users.get_single_by_id(id_str)
-    await send_user(sid, user)
+    await send_user_id(sid, user)
+
+
+async def send_user_id(sid, user):
+    event = 'user' + str(user['id'])
+    await sio.emit(event, user, room=sid)
 
 
 @sio.on('getUserByUsername')
 async def get_user_by_username(sid, username):
     user = users.get_single_by_username(username)
-    await send_user(sid, user)
+    await send_user_username(sid, user)
 
 
-async def send_user(sid, user):
+async def send_user_username(sid, user):
     await sio.emit('user', user, room=sid)
 
 
@@ -84,6 +90,29 @@ async def edit_book(sid, book):
 @sio.on('deleteBook')
 async def edit_book(sid, id_str):
     books.delete(id_str)
+
+
+# --------------------------- MESSAGES ---------------------
+
+
+@sio.on('sendMessage')
+async def send_msg(sid, msg_str):
+    messages.send(msg_str)
+    msgs = messages.get_all()
+    await send_messages(-1, msgs)
+
+
+@sio.on('getAllMessages')
+async def get_messages(sid, arg):
+    msgs = messages.get_all()
+    await send_messages(sid, msgs)
+
+
+async def send_messages(sid, msgs):
+    if sid == -1:
+        await sio.emit('allMessages', msgs)
+    else:
+        await sio.emit('allMessages', msgs, room=sid)
 
 
 app.router.add_get('/', index)
