@@ -8,7 +8,7 @@ def get_all():
     users = c.fetchall()
     conn.close()
     for i in range(len(users)):
-        users[i] = {'id': users[i][0], 'username': users[i][1], 'email': users[i][2], 'password': users[i][3]}
+        users[i] = {'id': users[i][0], 'username': users[i][1], 'email': users[i][2], 'password': users[i][3], 'imgUrl': users[i][4]}
     return users
 
 
@@ -19,7 +19,7 @@ def get_single_by_id(id_str):
     c.execute('SELECT * FROM users WHERE id=?', params)
     user = c.fetchone()
     conn.close()
-    user = {'id': user[0], 'username': user[1], 'email': user[2], 'password': user[3]}
+    user = {'id': user[0], 'username': user[1], 'email': user[2], 'password': user[3], 'imgUrl': user[4]}
     return user
 
 
@@ -31,10 +31,10 @@ def get_single_by_username(username):
         c.execute('SELECT * FROM users WHERE username=?', params)
         user = c.fetchone()
         conn.close()
-        user = {'id': user[0], 'username': user[1], 'email': user[2], 'password': user[3]}
+        user = {'id': user[0], 'username': user[1], 'email': user[2], 'password': user[3], 'imgUrl': user[4]}
         return user
     except:
-        return {'id': -1, 'username': '', 'email': '', 'password': ''}
+        return {'id': -1, 'username': '', 'email': '', 'password': '', 'imgUrl': ''}
 
 
 def create(user_str, id='-1'):
@@ -42,10 +42,10 @@ def create(user_str, id='-1'):
     conn = sqlite3.connect('db.db')
     c = conn.cursor()
     if id == '-1':
-        params = (len(get_all()) + 1, user[0], user[1], user[2])
+        params = (len(get_all()) + 1, user[0], user[1], user[2], user[3])
     else:
-        params = (int(id), user[0], user[1], user[2])
-    c.execute('INSERT INTO users VALUES(?, ?, ?, ?)', params)
+        params = (int(id), user[0], user[1], user[2], user[3])
+    c.execute('INSERT INTO users VALUES(?, ?, ?, ?, ?)', params)
     conn.commit()
     conn.close()
 
@@ -61,6 +61,6 @@ def delete(id):
 
 def edit(user_str):
     user = user_str.split('|')
-    user_str = user[1] + '|' + user[2] + '|' + user[3]
+    user_str = user[1] + '|' + user[2] + '|' + user[3] + '|' + user[4]
     delete(user[0])
     create(user_str, user[0])

@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5b4e87d-ac0f-43d2-8ad8-b597f291dc77" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/messages.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/users.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,25 +16,27 @@
     <session id="1208631978">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.open.time.32" value="3" />
+          <entry key="project.open.time.32" value="4" />
           <entry key="project.open.time.33" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="6" />
-          <entry key="py" value="3899" />
-          <entry key="txt" value="55" />
+          <entry key="py" value="4042" />
+          <entry key="txt" value="79" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="61" />
-          <entry key="Python" value="3899" />
+          <entry key="PLAIN_TEXT" value="85" />
+          <entry key="Python" value="4042" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -52,10 +53,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
+            <state relative-caret-position="459">
               <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -63,7 +64,6 @@
                 <marker date="1543492336994" expanded="true" signature="1311:1335" ph="..." />
                 <marker date="1543492336994" expanded="true" signature="1675:2359" ph="..." />
                 <marker date="1543492336994" expanded="true" signature="2127:2195" ph="..." />
-                <marker date="1543492336994" expanded="true" signature="2302:2359" ph="..." />
               </folding>
             </state>
           </provider>
@@ -81,16 +81,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+            <state relative-caret-position="400">
+              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
               <folding>
-                <marker date="1543492070672" expanded="true" signature="31:331" ph="..." />
-                <marker date="1543492070672" expanded="true" signature="360:365" ph="..." />
-                <marker date="1543492070672" expanded="true" signature="1153:1158" ph="..." />
-                <marker date="1543492070672" expanded="true" signature="1474:1479" ph="..." />
+                <marker date="1543517172909" expanded="true" signature="31:354" ph="..." />
+                <marker date="1543517172909" expanded="true" signature="383:388" ph="..." />
+                <marker date="1543517172909" expanded="true" signature="1228:1233" ph="..." />
+                <marker date="1543517172909" expanded="true" signature="1570:1575" ph="..." />
               </folding>
             </state>
           </provider>
@@ -139,8 +139,8 @@
         <option value="$PROJECT_DIR$/tets.py" />
         <option value="$PROJECT_DIR$/books.py" />
         <option value="$PROJECT_DIR$/messages.py" />
-        <option value="$PROJECT_DIR$/users.py" />
         <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/users.py" />
       </list>
     </option>
   </component>
@@ -301,7 +301,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543150306228</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="#3 chat works">
+      <created>1543492387919</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1543492387919</updated>
+    </task>
+    <task id="LOCAL-00006" summary="#3 chat works">
+      <created>1543492615066</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1543492615066</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -334,9 +348,34 @@
     <MESSAGE value="navbar works" />
     <MESSAGE value="#2 books working" />
     <MESSAGE value="#1 delete and edit user" />
-    <option name="LAST_COMMIT_MESSAGE" value="#1 delete and edit user" />
+    <MESSAGE value="#3 chat works" />
+    <option name="LAST_COMMIT_MESSAGE" value="#3 chat works" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1543492336994" expanded="true" signature="1130:1179" ph="..." />
+            <marker date="1543492336994" expanded="true" signature="1311:1335" ph="..." />
+            <marker date="1543492336994" expanded="true" signature="1675:2359" ph="..." />
+            <marker date="1543492336994" expanded="true" signature="2127:2195" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <marker date="1543329147257" expanded="true" signature="367:372" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/books.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
@@ -357,40 +396,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/messages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding>
-            <marker date="1543329147257" expanded="true" signature="367:372" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/users.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        <state relative-caret-position="400">
+          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
           <folding>
-            <marker date="1543492070672" expanded="true" signature="31:331" ph="..." />
-            <marker date="1543492070672" expanded="true" signature="360:365" ph="..." />
-            <marker date="1543492070672" expanded="true" signature="1153:1158" ph="..." />
-            <marker date="1543492070672" expanded="true" signature="1474:1479" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1543492336994" expanded="true" signature="1130:1179" ph="..." />
-            <marker date="1543492336994" expanded="true" signature="1311:1335" ph="..." />
-            <marker date="1543492336994" expanded="true" signature="1675:2359" ph="..." />
-            <marker date="1543492336994" expanded="true" signature="2127:2195" ph="..." />
-            <marker date="1543492336994" expanded="true" signature="2302:2359" ph="..." />
+            <marker date="1543517172909" expanded="true" signature="31:354" ph="..." />
+            <marker date="1543517172909" expanded="true" signature="383:388" ph="..." />
+            <marker date="1543517172909" expanded="true" signature="1228:1233" ph="..." />
+            <marker date="1543517172909" expanded="true" signature="1570:1575" ph="..." />
           </folding>
         </state>
       </provider>
