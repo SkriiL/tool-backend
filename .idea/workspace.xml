@@ -4,7 +4,6 @@
     <list default="true" id="b5b4e87d-ac0f-43d2-8ad8-b597f291dc77" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.db" beforeDir="false" afterPath="$PROJECT_DIR$/db.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users.py" beforeDir="false" afterPath="$PROJECT_DIR$/users.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,27 +15,28 @@
     <session id="1208631978">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.32" value="4" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.opened" value="9" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="6" />
-          <entry key="py" value="4042" />
-          <entry key="txt" value="79" />
+          <entry key="py" value="4134" />
+          <entry key="txt" value="111" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="85" />
-          <entry key="Python" value="4042" />
+          <entry key="PLAIN_TEXT" value="117" />
+          <entry key="Python" value="4134" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -84,13 +84,13 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/users.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+            <state relative-caret-position="434">
+              <caret line="63" column="85" selection-start-line="63" selection-start-column="85" selection-end-line="63" selection-end-column="85" />
               <folding>
-                <marker date="1543517172909" expanded="true" signature="31:354" ph="..." />
-                <marker date="1543517172909" expanded="true" signature="383:388" ph="..." />
-                <marker date="1543517172909" expanded="true" signature="1228:1233" ph="..." />
-                <marker date="1543517172909" expanded="true" signature="1570:1575" ph="..." />
+                <marker date="1543597233799" expanded="true" signature="31:377" ph="..." />
+                <marker date="1543597233799" expanded="true" signature="406:411" ph="..." />
+                <marker date="1543597233799" expanded="true" signature="1289:1294" ph="..." />
+                <marker date="1543597233799" expanded="true" signature="1662:1667" ph="..." />
               </folding>
             </state>
           </provider>
@@ -315,7 +315,21 @@
       <option name="project" value="LOCAL" />
       <updated>1543492615066</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="#4 profilbilder">
+      <created>1543597048875</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1543597048875</updated>
+    </task>
+    <task id="LOCAL-00008" summary="#5 rechtesystem">
+      <created>1543599839231</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1543599839231</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -349,7 +363,9 @@
     <MESSAGE value="#2 books working" />
     <MESSAGE value="#1 delete and edit user" />
     <MESSAGE value="#3 chat works" />
-    <option name="LAST_COMMIT_MESSAGE" value="#3 chat works" />
+    <MESSAGE value="#4 profilbilder" />
+    <MESSAGE value="#5 rechtesystem" />
+    <option name="LAST_COMMIT_MESSAGE" value="#5 rechtesystem" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server.py">
@@ -398,13 +414,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/users.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="61" column="19" selection-start-line="61" selection-start-column="19" selection-end-line="61" selection-end-column="19" />
+        <state relative-caret-position="434">
+          <caret line="63" column="85" selection-start-line="63" selection-start-column="85" selection-end-line="63" selection-end-column="85" />
           <folding>
-            <marker date="1543517172909" expanded="true" signature="31:354" ph="..." />
-            <marker date="1543517172909" expanded="true" signature="383:388" ph="..." />
-            <marker date="1543517172909" expanded="true" signature="1228:1233" ph="..." />
-            <marker date="1543517172909" expanded="true" signature="1570:1575" ph="..." />
+            <marker date="1543597233799" expanded="true" signature="31:377" ph="..." />
+            <marker date="1543597233799" expanded="true" signature="406:411" ph="..." />
+            <marker date="1543597233799" expanded="true" signature="1289:1294" ph="..." />
+            <marker date="1543597233799" expanded="true" signature="1662:1667" ph="..." />
           </folding>
         </state>
       </provider>
