@@ -45,7 +45,7 @@ async def send_user_username(sid, user):
 
 
 @sio.on('getAllUsers')
-async def get_all_users(sid):
+async def get_all_users(sid, arg):
     users_ = users.get_all()
     await send_users(sid, users_)
 
@@ -62,6 +62,11 @@ async def create_user(sid, user):
 @sio.on('editUser')
 async def edit_user(sid, user):
     users.edit(user)
+
+
+@sio.on('deleteUser')
+async def delete_user(sid, id_str):
+    users.delete(id_str)
 
 
 # --------------------------- BOOKS -------------------------
