@@ -1,4 +1,5 @@
 import sqlite3
+import thalia_crawler
 
 
 def get_all():
@@ -52,3 +53,20 @@ def edit(book_str):
     book_str = book[1] + '|' + book[2] + '|' + book[3] + '|' + book[4] + '|' + book[5] + '|' + book[6] + '|' + book[7]
     delete(book[0])
     add(book_str, book[0])
+
+
+def search(search_str):
+    search_str = search_str.split(' ')
+    new = ""
+    for item in search_str:
+        if item == search_str[-1]:
+            new += item
+        else:
+            new += item + '+'
+    products = thalia_crawler.get_results(new)
+    books = []
+    for p in products:
+        book = {'id': -1, 'title': p.title, 'author': p.author, 'price': p.price,
+                'own': 'false', 'read': 'false', 'link': p.link, 'userId': -1}
+        books.append(book)
+    return books

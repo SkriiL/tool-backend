@@ -97,6 +97,16 @@ async def edit_book(sid, id_str):
     books.delete(id_str)
 
 
+@sio.on('searchBook')
+async def search_book(sid, search_str):
+    books_ = books.search(search_str)
+    await send_searched_books(sid, books_)
+
+
+async def send_searched_books(sid, books_):
+    await sio.emit('searchedBook', books_, room=sid)
+
+
 # --------------------------- MESSAGES ---------------------
 
 
