@@ -141,7 +141,6 @@ async def get_deriv(sid, args):
 
 
 async def send_expression(sid, expr):
-    print(expr)
     await sio.emit('mathExpression', expr, room=sid)
 
 
