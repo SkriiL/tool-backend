@@ -3,6 +3,7 @@ import socketio
 import users
 import books
 import messages
+import maths
 
 sio = socketio.AsyncServer()
 app = web.Application()
@@ -128,6 +129,20 @@ async def send_messages(sid, msgs):
         await sio.emit('allMessages', msgs)
     else:
         await sio.emit('allMessages', msgs, room=sid)
+
+
+# --------------------------- MATHS ---------------------
+
+
+@sio.on('getDeriv')
+async def get_deriv(sid, args):
+    deriv = maths.get_deriv(args)
+    await send_expression(sid, deriv)
+
+
+async def send_expression(sid, expr):
+    print(expr)
+    await sio.emit('mathExpression', expr, room=sid)
 
 
 app.router.add_get('/', index)
